@@ -1,0 +1,33 @@
+@charset "UTF-8";
+/* This CSS will print because %message-shared is extended. */
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+$max : 100%;
+$defualt_font : 14px;
+$main_color : #007cd4;
+.dim {background:#000; position:fixed; top:0; left:0; opacity: 0.5; width:$max; height:$max;}
+html,body {height:$max;
+font-size:$defualt_font;
+}
+.contetns {
+  &__fl {float:left;}
+}
+
+.contetns {
+  &__box { width : calc( 100% - 150px);
+  margin-left:150px;
+  }
+}
+
+.clb:after {
+  display:block;
+  clear:both;
+  content:'';
+}
+header {
+  background:$main_color;
+  height:100%;
+  width:150px;
+  position:fixed;
+  top:0;
+  left:0;
+}

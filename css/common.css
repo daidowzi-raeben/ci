@@ -1,4 +1,40 @@
-.warp {
-  color: #000;
-  font-size: 20px;
+/* This CSS will print because %message-shared is extended. */
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+.dim {
+  background: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+}
+
+html, body {
+  height: 100%;
+  font-size: 14px;
+}
+
+.contetns__fl {
+  float: left;
+}
+
+.contetns__box {
+  width: calc( 100% - 150px);
+  margin-left: 150px;
+}
+
+.clb:after {
+  display: block;
+  clear: both;
+  content: '';
+}
+
+header {
+  background: #007cd4;
+  height: 100%;
+  width: 150px;
+  position: fixed;
+  top: 0;
+  left: 0;
 }

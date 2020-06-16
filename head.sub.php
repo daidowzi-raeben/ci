@@ -43,13 +43,15 @@ header("Pragma: no-cache"); // HTTP/1.0
 <meta charset="utf-8">
 <?php
 if (G5_IS_MOBILE) {
-    echo '<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=yes">'.PHP_EOL;
-    echo '<meta name="HandheldFriendly" content="true">'.PHP_EOL;
-    echo '<meta name="format-detection" content="telephone=no">'.PHP_EOL;
+    
 } else {
     echo '<meta http-equiv="imagetoolbar" content="no">'.PHP_EOL;
     echo '<meta http-equiv="X-UA-Compatible" content="IE=Edge">'.PHP_EOL;
 }
+
+echo '<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">'.PHP_EOL;
+echo '<meta name="HandheldFriendly" content="true">'.PHP_EOL;
+echo '<meta name="format-detection" content="telephone=no">'.PHP_EOL;
 
 if($config['cf_add_meta'])
     echo $config['cf_add_meta'].PHP_EOL;
@@ -99,6 +101,9 @@ if(!defined('G5_IS_ADMIN'))
 
 <link rel="stylesheet" type="text/css" href="<?php echo G5_CSS_URL?>/common.css?v=<?php echo date("s");?>">
 <link rel="stylesheet" type="text/css" href="<?php echo G5_CSS_URL?>/reset.css?v=<?php echo date("s");?>">
+<link rel="stylesheet" type="text/css" href="<?php echo G5_CSS_URL?>/mui/mui.min.css?v=<?php echo date("s");?>">
+<script src="<?php echo G5_JS_URL?>/mui/mui.min.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body<?php echo isset($g5['body_script']) ? $g5['body_script'] : ''; ?>>
 <?php

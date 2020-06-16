@@ -20,21 +20,48 @@ include_once(G5_LIB_PATH.'/poll.lib.php');
 include_once(G5_LIB_PATH.'/visit.lib.php');
 include_once(G5_LIB_PATH.'/connect.lib.php');
 include_once(G5_LIB_PATH.'/popular.lib.php');
+
+define('PHP_SERVER',$_SERVER['PHP_SELF']);
 ?>
+
 <div class="dim"></div>
-<div id="#warp">
-    <div class="contetns clb">
-        <div class="">
-            <header>
-                <nav>
-                    <ul>
-                        <li></li>
-                    </ul>
-                </nav>
-            </header>
+
+<div id="warp">
+    <header>
+        <div class="back"></div>
+        <div class="s-font back__name">
+        홍길동님,<br>
+        <span>안녕하세요</span>
         </div>
-        <div class="contetns__box">
-            asd
+        <div class="s-font back__coin">
+            10,000,000
+            <span>루피</span>
         </div>
+        <div class="back__tag">
+            <ul class="clb">
+                <li>
+                    # asd
+                </li>
+                <li>
+                    # asd
+                </li>
+                <li>
+                    # asd
+                </li>
+                <li>
+                    # asd
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="warp">
+        <session>
+            <ul>
+                <li>asd</li>
+            </ul>
+        </session>
     </div>
+    
 </div>
+           

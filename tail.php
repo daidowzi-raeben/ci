@@ -12,7 +12,33 @@ if (G5_IS_MOBILE) {
 }
 ?>
 
-
+<div class="footer_gnb">
+    <ul>
+        <li>
+            <span class="material-icons">
+            bar_chart
+            <!-- main -->
+            </span>
+        </li>
+        <li>
+            <span class="material-icons">
+            spa
+            <!-- quest -->
+            </span>
+        </li>
+        <li>
+            <span class="material-icons">
+            notifications_none
+            <!-- notifi -->
+            </span>
+        </li>
+        <li>
+            <span class="material-icons">
+            message
+            </span>
+        </li>
+    </ul>
+</div>
 
 
 <?php

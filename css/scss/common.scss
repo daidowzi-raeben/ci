@@ -1,33 +1,94 @@
 @charset "UTF-8";
+@font-face { font-family: 'S-CoreDream-2ExtraLight'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-2ExtraLight.woff') format('woff'); font-weight: normal; font-style: normal; }
 /* This CSS will print because %message-shared is extended. */
-@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
 $max : 100%;
 $defualt_font : 14px;
 $main_color : #007cd4;
-.dim {background:#000; position:fixed; top:0; left:0; opacity: 0.5; width:$max; height:$max;}
-html,body {height:$max;
-font-size:$defualt_font;
-}
-.contetns {
-  &__fl {float:left;}
-}
+$gnb_w : 150px;
+$gnb_not : #e4e4e4;
+$s-font : S-CoreDream-2ExtraLight;
+$mc : #4b53bc;
+$fn : 20px;
+$fl : 40px;
 
-.contetns {
-  &__box { width : calc( 100% - 150px);
-  margin-left:150px;
+$break-small: 640px;
+$break-large: 1920px;
+
+@mixin respond-to($media) {
+  @if $media == mobile {
+    @media only screen and (max-width: $break-small) { @content; }
+  }
+  @else {
+    @media only screen and (min-width: $break-small + 1) and (max-width: $break-large - 1) { @content; }
   }
 }
 
-.clb:after {
-  display:block;
-  clear:both;
-  content:'';
+
+@mixin after {
+  position:absolute; content: '';
 }
-header {
-  background:$main_color;
-  height:100%;
-  width:150px;
-  position:fixed;
-  top:0;
-  left:0;
+
+.clb:after{
+  clear: both;
+  display: block;
+  content: '';
+
+}
+
+#warp {
+  header {
+    color:#fff;
+    div.back {
+      background:$mc;
+      height:300px;
+      position:absolute;
+      width:100%;
+      z-index:-1;
+      border-radius: 0 0 30px 30px;
+      &__name {
+        padding:20px;
+        span{
+          font-size:$fn;
+        }
+      }
+      &__coin{
+        padding:0px 20px;
+        font-weight:900;
+        font-size: $fl;
+        span{
+          font-size:$fn;
+          font-weight:normal;
+        }
+      }
+      &__tag {
+        ul{
+          padding-left:20px; padding-top:10px;
+          li{
+            float:left;
+            padding:5px 10px;
+            border:1px solid #fff;
+            border-radius: 30px;
+            margin-right:10px;
+          }
+        }
+      }
+    }
+    
+  }
+}
+.s-font {
+  font-family: $s-font;
+}
+
+.footer_gnb {
+  width: $max;
+  position: fixed;
+  height:60px;
+  line-height:60px;
+  bottom:0;
+  li {
+    float:left;
+    text-align:center;
+    width: 25%;
+  }
 }

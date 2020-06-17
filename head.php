@@ -28,40 +28,47 @@ define('PHP_SERVER',$_SERVER['PHP_SELF']);
 
 <div id="warp">
     <header>
-        <div class="back"></div>
-        <div class="s-font back__name">
-        홍길동님,<br>
-        <span>안녕하세요</span>
-        </div>
-        <div class="s-font back__coin">
-            10,000,000
-            <span>루피</span>
-        </div>
-        <div class="back__tag">
-            <ul class="clb">
-                <li>
-                    # asd
-                </li>
-                <li>
-                    # asd
-                </li>
-                <li>
-                    # asd
-                </li>
-                <li>
-                    # asd
-                </li>
-            </ul>
+        <div class="my_price clb">
+            <div class="fl my_price__photo" style="background-image:url('../image/test_profile.png');">
+                <div class="upload_profile">
+                    <span class="material-icons">
+                    photo_camera
+                    </span>
+                </div>
+            </div>
+            <div class="fl my_price__left">
+                <div class="up__sub_title">나의 자산</div>
+                <div class="s-font down__price">500,000 <span>루피</span></div>
+            </div>
+            <div class="fr my_price__right">
+                <span class="material-icons">
+                keyboard_arrow_right
+                </span>
+            </div>
         </div>
     </header>
-
-    <div class="warp">
-        <session>
-            <ul>
-                <li>asd</li>
+    <section>
+        <div class="hello_word s-font">
+            안녕하세요, <span>홍길동님</span>
+        </div>
+    </section>
+    <section>
+        <div class="main_contents">
+            <ul class="clb">
+                <li>
+                    <div class="in__box">
+                        <p>5초전</p>
+                    </div>
+                </li>
+                <li><div class="in__box">asd</div></li>
+                <li><div class="in__box">asd</div></li>
+                <li><div class="in__box">asd</div></li>
+                
             </ul>
-        </session>
-    </div>
-    
+        </div>
+    </section>
+
+    <section>
+        <div>asd</div>
+    </section>
 </div>
-           

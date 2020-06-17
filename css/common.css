@@ -6,55 +6,114 @@
 }
 
 /* This CSS will print because %message-shared is extended. */
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
 .clb:after {
   clear: both;
   display: block;
   content: '';
 }
 
-#warp header {
-  color: #fff;
+#warp {
+  width: 90%;
+  margin: 20px auto;
 }
 
-#warp header div.back {
+#warp header div.my_price {
+  padding: 10px;
+  background: #eceff4;
+  border-radius: 10px;
+}
+
+#warp header div.my_price__photo {
+  margin-left: 5px;
+  width: 55px;
+  height: 55px;
+  background: #000;
+  border-radius: 50px;
+  background-size: 110%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#warp header div.my_price__photo div.upload_profile {
+  width: 20px;
+  height: 20px;
   background: #4b53bc;
-  height: 300px;
+  text-align: center;
+  color: #fff;
+  border-radius: 50px;
   position: absolute;
-  width: 100%;
-  z-index: -1;
-  border-radius: 0 0 30px 30px;
+  margin-left: 40px;
+  margin-top: 35px;
 }
 
-#warp header div.back__name {
-  padding: 20px;
+#warp header div.my_price__photo div.upload_profile span {
+  font-size: 12px;
+  line-height: 20px;
 }
 
-#warp header div.back__name span {
-  font-size: 20px;
+#warp header div.my_price__left {
+  margin-left: 20px;
 }
 
-#warp header div.back__coin {
-  padding: 0px 20px;
-  font-weight: 900;
-  font-size: 40px;
+#warp header div.my_price__right {
+  margin-top: 15px;
 }
 
-#warp header div.back__coin span {
-  font-size: 20px;
-  font-weight: normal;
+#warp header div.my_price__right span {
+  font-size: 30px;
 }
 
-#warp header div.back__tag ul {
-  padding-left: 20px;
-  padding-top: 10px;
+#warp header div.fl div.up__sub_title {
+  font-size: 12px;
 }
 
-#warp header div.back__tag ul li {
+#warp header div.fl div.down__price {
+  font-size: 25px;
+  color: #4b53bc;
+  font-weight: bold;
+}
+
+#warp header div.fl div.down__price span {
+  font-size: 14px;
+  color: #000;
+}
+
+#warp .hello_word {
+  margin-top: 30px;
+}
+
+#warp .hello_word span {
+  font-size: 25px;
+  margin-left: 10px;
+}
+
+#warp .main_contents {
+  margin-top: 4%;
+}
+
+#warp .main_contents ul li {
+  width: 48%;
+  margin-bottom: 4%;
   float: left;
-  padding: 5px 10px;
-  border: 1px solid #fff;
-  border-radius: 30px;
-  margin-right: 10px;
+}
+
+#warp .main_contents ul li .in__box {
+  padding: 10px;
+  height: 80px;
+  border-radius: 10px;
+  background: #f75366;
+}
+
+#warp .main_contents ul li:nth-child(2n) {
+  float: right;
 }
 
 .s-font {
@@ -73,4 +132,28 @@
   float: left;
   text-align: center;
   width: 25%;
+}
+
+div.warp__margin {
+  margin-top: 40px;
+}
+
+div.warp section ul li.bank_list {
+  width: 90%;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 10px;
+  border-radius: 5px;
+  margin-left: 5%;
+  margin-bottom: 10px;
+  background: #fff;
+  border: 1px solid #ddd;
+}
+
+section#my_quest {
+  height: 200px;
+  background: #fff;
+  border: 1px solid #ddd;
+  width: 90%;
+  margin: 0 auto;
 }
